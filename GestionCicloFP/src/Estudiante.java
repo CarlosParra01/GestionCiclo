@@ -1,16 +1,29 @@
+
+	 /**
+	 * Clase estudiante	
+	 * con nombre, id y edad. 
+	 * @author Carlos
+	 */
 public class Estudiante {
-    public String Nombre_estudiante;  
-    public int ID_ESTUDIANTE;         
-    public int Edad_Estudiante;       
-   
-    public Estudiante(String Nombre_estudiante, int ID_ESTUDIANTE, int Edad_Estudiante) {
-        this.Nombre_estudiante = Nombre_estudiante;
-        this.ID_ESTUDIANTE = ID_ESTUDIANTE;
-        this.Edad_Estudiante = Edad_Estudiante;
+	
+    public String nombre;  
+    public int id;         
+    public int edad;  
+    
+   /**
+    * Constructor de Estudiante
+    * @param nombre, nombre del estudiante  
+    * @param id, identificador del estudiante  
+	* @param edad, edad del estudiante 
+    */
+    public Estudiante(String nombre, int id, int edad) {
+        this.nombre = nombre;
+        this.id = id;
+        this.edad = edad;
        
     }
 
-    public String datos_estudiante() {
-        return "Estudiante: " + Nombre_estudiante + " (ID: " + ID_ESTUDIANTE + ") Edad: " + Edad_Estudiante;
+    public String datosEstudiante() {
+        return "Estudiante: " + nombre + " (ID: " + id + ") Edad: " + edad;
     }
 }

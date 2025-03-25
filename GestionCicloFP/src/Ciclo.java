@@ -1,21 +1,38 @@
 import java.util.ArrayList;
-
+/**
+ * @author Carlos
+ */
+/**
+ * Clase Ciclo, con un nombre 
+ * y una lista de estudiante
+ */
 public class Ciclo {
-    public String NOMBRE_CICLO;
-    public ArrayList<Estudiante> LISTA_ESTUDIANTES = new ArrayList<>();
-
-    public Ciclo(String NOMBRE_CICLO) {
-        this.NOMBRE_CICLO = new String(NOMBRE_CICLO);
+    public String nombreCiclo;
+    public ArrayList<Estudiante> listaEstudiantes = new ArrayList<>();
+/**
+ * Constructor de Ciclo
+ * @param nombreCiclo, nombre del ciclo
+ * @param listaEstudiantes, lista de Alumnos matriculados en el ciclo 
+ */
+    public Ciclo(String nombreCiclo) {
+        this.nombreCiclo = new String(nombreCiclo);
     }
-
-    public void Agregar_estudiante(Estudiante e) { 
-        LISTA_ESTUDIANTES.add(e); 
+   /**
+    * Metodo para agregar un estudiante
+    * @param estudiante, estudiante que se va a agregar 
+    */
+    public void agregarEstudiante(Estudiante estudiante) { 
+        listaEstudiantes.add(estudiante); 
     }
-
-    public String datos_ciclo() {  
-        String datos = "Ciclo: " + NOMBRE_CICLO + "\nEstudiantes:\n";
-        for (Estudiante e : LISTA_ESTUDIANTES) {
-            datos += e.datos_estudiante() + "\n";
+    /**
+     * Metodo para devolver los datos del ciclo y 
+     * la lista de estudiantes 
+     * @return Una cadena con la informacion del ciclo 
+     */
+    public String datosCiclo() {  
+        String datos = "Ciclo: " + nombreCiclo + "\nEstudiantes:\n";
+        for (Estudiante estudiante : listaEstudiantes) {
+            datos += estudiante.datosEstudiante() + "\n";
         }
         return datos;
     }

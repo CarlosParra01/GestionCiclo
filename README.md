@@ -4,9 +4,11 @@ PRIMERO.
   -Se abre la cmd, y escribimos la ruta que deseamos acceder, 
   -Hacemos un "git init" para inicializar el repositorio
   -Antes de eso se da por hecho que hemos creado el repositorio en nuestra cuenta de GitHub
+
 SEGUNDO.
   -Conectamos el repositorio local al remoto
   -"git remote add origin + rutaDelRepositorio"
+  
 TERCERO.
   -Agregamos los archivos al repositorio con un "git add ."
   -Realizamos un commit con un mensaje descriptivo "git commit -m "mensaje""

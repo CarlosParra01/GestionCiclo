@@ -28,7 +28,7 @@ Elegimos los archivos del JavaDoc que queremos generar y le damos a finalizar.
 HTML.
 
 Se encuentra dentro de la carpeta "doc".
-Con nombre de "GestionCicloFP.html"
+Con nombre de "index.html"
 
 ------------------------------------------------------------------------------------------------------
 
